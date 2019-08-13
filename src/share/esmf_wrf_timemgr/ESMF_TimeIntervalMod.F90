@@ -508,6 +508,8 @@ contains
     END IF
 
     IF ( PRESENT( d_r8 ) )THEN
+      write(6,*)'These are the input seconds:', seconds
+      write(6,*)'These are the input spd:', SECONDS_PER_DAY
        D_r8 = REAL( seconds, ESMF_KIND_R8 ) / &
             REAL( SECONDS_PER_DAY, ESMF_KIND_R8 )
     END IF
