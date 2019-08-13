@@ -512,6 +512,7 @@ contains
       write(6,*)'These are the input spd:', SECONDS_PER_DAY
        D_r8 = REAL( seconds, ESMF_KIND_R8 ) / &
             REAL( SECONDS_PER_DAY, ESMF_KIND_R8 )
+      write(6,*)'This is the output days:', D_r8
     END IF
 
     ! If d_r8 present and sec present
