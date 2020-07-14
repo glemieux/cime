@@ -454,6 +454,9 @@
 
   <batch_system MACH="lawrencium-lr3" type="slurm">
     <batch_submit>sbatch</batch_submit>
+    <submit_args>
+      <arg flag="--time" name="$JOB_WALLCLOCK_TIME"/>
+    </submit_args>
     <directives>
       <directive>--qos=lr_normal</directive>
       <directive>--partition=lr3</directive>
@@ -467,6 +470,9 @@
 
   <batch_system MACH="lawrencium-lr2" type="slurm">
     <batch_submit>sbatch</batch_submit>
+    <submit_args>
+      <arg flag="--time" name="$JOB_WALLCLOCK_TIME"/>
+    </submit_args>
     <directives>
        <directive>--qos=lr_normal</directive>
        <directive>--partition=lr2</directive>
